@@ -1,0 +1,38 @@
+---
+server:
+  port: 3000
+#  contextPath: /cusr
+ 
+jackson:
+    serialization:
+    FAIL_ON_EMPTY_BEANS: false 
+ 
+spring:
+  social:
+    facebook:
+      app-id: 384261248599251
+      app-secret: fd7fa1c5f5a267f463263a0ce7ff2025
+    google:
+      app-id: 12894100090-tqso3lih5o42isneort886la2pesafmp.apps.googleusercontent.com
+      app-secret: 9xfU16efvxQ-BTMsXT9wOLpw
+      
+profiles: local,default
+traincapacity: 1000
+
+
+datasource:
+  cusrapp:
+    url:  jdbc:mysql://lab2instance.cpjbuvnc3wsr.us-east-2.rds.amazonaws.com:3306/taskdb
+    username: abhi3003
+    password: abhishek
+    driverClassName: com.mysql.jdbc.Driver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.MySQLDialect
+      
+
+
