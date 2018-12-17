@@ -1,5 +1,5 @@
 # Train Booking Application
 
-## Technolgies Used
+## Technologies Used
 Backend: Springboot
 Frontend: Angular
